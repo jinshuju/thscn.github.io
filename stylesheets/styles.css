@@ -1,8 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
 }
@@ -96,9 +95,17 @@ img {
 }
 
 header {
-  width:270px;
-  float:left;
-  position:fixed;
+  text-align: center;
+}
+
+header h1 {
+  background-image: url("../images/ths.png");
+  width: 236px;
+  height: 65px;
+  background-size: 236px 65px;
+  text-indent: -10000px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 header ul {
@@ -160,9 +167,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
-  float:right;
-  padding-bottom:50px;
+  
 }
 
 small {
@@ -177,10 +182,10 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #999;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -196,9 +201,6 @@ footer {
     width:auto;
   }
   
-  header {
-    padding-right:320px;
-  }
   
   section {
     border:1px solid #e5e5e5;
